@@ -1,0 +1,160 @@
+{
+	"compiler": {
+		"version": "0.8.34+commit.80d5c536"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_description",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_durationInMinutes",
+						"type": "uint256"
+					}
+				],
+				"name": "addProposal",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_proposalIndex",
+						"type": "uint256"
+					}
+				],
+				"name": "getResult",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "_yesVotes",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_noVotes",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "proposals",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "description",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "creator",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "endTime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "createTime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "yesVotes",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "noVotes",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_proposalIndex",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "_yesVote",
+						"type": "bool"
+					}
+				],
+				"name": "vote",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"projects/Voting.sol": "Voting"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"projects/Voting.sol": {
+			"keccak256": "0x3239376a40cd862436c68916641588acb55b08b5e8c92013817e9bd2432302a0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://92466910704da34dec44a4400148b71ed830a60a2564ff97fa34b44316f68214",
+				"dweb:/ipfs/Qmduo1caH8iZbbfM3k2MtJSsiwueTpy1YeXksLqMsu2Ze9"
+			]
+		}
+	},
+	"version": 1
+}
